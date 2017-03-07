@@ -1,0 +1,45 @@
+<body id = body style="background-color:black" onkeypress="{
+	if(event.keyCode==97){    document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)-5+'px' }   // small 'a' key go left
+	if(event.keyCode==119){   document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)-5+'px'}   // small 'w' key go up
+    if(event.keyCode==100){    document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)+5+'px'}   // small 'd' key go right
+    if(event.keyCode==115){   document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)+5+'px'}     // small 's' key go dow
+}">
+
+
+
+
+<img id="my01" style="position:absolute; left:0px; top:0px;"
+    src="http://rs862.pbsrc.com/albums/ab187/rocker_4u/thth4r1sewl.gif~c200">
+    
+    
+    
+    
+    </body>
+
+ <input type=button value="A" onclick="{  
+ document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)-5+'px'
+ }">
+    
+    <input type=button value="W" onclick="{
+     document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)-5+'px'
+  
+   }"><br>
+    
+    <input type=button value="D" onclick="{
+    document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)+5+'px'
+  
+   }"><br>
+    
+    <input type=button value="S" onclick="{
+    document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)+5+'px'
+  
+   }"><br>
+   <table border=1>
+       <tr>
+           <td></td>
+           <td>  
+    <input type=button value="W" onclick="{
+     document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)-5+'px'}"
+  </td>
+           <td></td>
+       </tr>
