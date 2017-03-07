@@ -1,0 +1,138 @@
+ <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Chicken_Pie.JPG/438px-Chicken_Pie.JPG">pie</a><br>
+
+
+
+ <input type=button value="to youtube" onclick="{
+   location='http://www.youtube.com'
+   }"><br>
+   
+  
+  
+  
+   <iframe width="640" height="360" src="https://www.youtube.com/embed/AUChk0lxF44" frameborder="0" allowfullscreen></iframe>
+  
+  
+  
+  
+<b> This is bold and boring</b><br><br><br>
+<b style="background-Color : red; color:yellow;
+  border-style : groove ; 
+  border-width : 10px ; border-color : blue;
+">
+  This is a bit more interesting
+</b><br><br><br><br>
+
+Enter x: <input type=text id="myX" value="3">
+
+<input type="button" value="My Computer Code" onclick="{
+ 
+   x = document.getElementById('myX').value
+   myTemp = ''
+   
+   if (x == 3){
+      myTemp = 'x is 3'
+   }  else if (x < 3) {
+         myTemp = 'x is less than 3' 
+      } else if(x > 3){
+           myTemp = 'x is greater than 3' 
+        } 
+       
+        
+   document.getElementById('myOut').innerHTML = myTemp     
+}"><br>
+
+<div id="myOut">Output goes here</div><br>
+
+Enter y: <input type=text id="myY" value="2"><br>
+Enter z: <input type=text id="myZ" value="5"><br>
+
+<input type=button value="Complex if" onclick="{
+   document.getElementById('myOut').innerHTML = ''
+   y = document.getElementById('myY').value
+   z = document.getElementById('myZ').value
+
+
+
+   if ((y == 2) && (z == 5)){
+      document.getElementById('myOut').innerHTML += y + 
+          ', ' + z + ' y=2 and z=5 <br>'
+   }
+
+   if ((y > 2) && (z < 5)){
+      document.getElementById('myOut').innerHTML += y + 
+          ', ' + z + ' y>2 and z<5 <br>'
+   }
+   
+   
+   if ((y != 4) && (z != 7)){
+      document.getElementById('myOut').innerHTML += y + 
+          ', ' + z + ' y does not equal 4 and z does not equal 7 <br>'
+   }
+
+   if ((y <= 1) && (z <= 3)){
+      document.getElementById('myOut').innerHTML += y + 
+          ', ' + z + ' y is less than or equals 1 and z is less than or equals 5 <br>'
+   }
+      if ((y == 8) && (z == 22)){
+      document.getElementById('myOut').innerHTML += y + 
+          ', ' + z + ' y=8 and z=22 <br>'
+   }
+
+   if ((y > 2) && (z < 5)){
+      document.getElementById('myOut').innerHTML += y + 
+          ', ' + z + ' y>2 and z<5 <br>'
+   }
+      if ((y == 2) && (z == 5)){
+      document.getElementById('myOut').innerHTML += y + 
+          ', ' + z + ' y=2 and z=5 <br>'
+   }
+
+   if ((y > 2) && (z < 5)){
+      document.getElementById('myOut').innerHTML += y + 
+          ', ' + z + ' y>2 and z<5 <br>'
+   }
+   
+}">
+
+
+
+
+
+  <br><br><br><br><br><br>
+  
+  
+<html>
+<body>>
+
+<button onclick="myFunction()">welcome</button>
+
+<p id="greeting"></p>
+
+<script>
+function myFunction() {
+    var hour = new Date().getHours(); 
+    var greeting;
+    if (hour < 18) {
+        greeting = "Good day";
+    } else {
+        greeting = "Good evening";
+    }
+    document.getElementById("greeting").innerHTML = greeting;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
