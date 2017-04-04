@@ -1,0 +1,54 @@
+<script>
+
+// set the object
+function myStudent(myAge, myName, myImg){
+   this.myStudentAge = myAge
+   this.myStudentName = myName
+   this.myStudentImage = myImg
+   this.myInfo = myStudentInfo
+}
+
+function myStudentInfo(){
+   document.getElementById('myDiv1').innerHTML += ' My name is ' + 
+       this.myStudentName + ' I am ' + this.myStudentAge +
+       ' years old. Here is my picture <br><img width=600 src =' + this.myStudentImage +
+       '><br><br>'
+}
+
+</script>
+
+
+
+<input type=button value="Austin Object" onclick="{
+  myAustin = new myStudent(16, 'Austin','http://static1.1.sqspcdn.com/static/f/278256/12392977/1306363894177/pokemon_formula.png?token=QpOZV%2B3N7KVdKca4ANefBxWbV9Q%3D' )
+  myAustin.myInfo()
+}">
+
+
+<input type=button value="kirby" onclick="{
+  myKirby = new myStudent(14, 'Kirby','https://upload.wikimedia.org/wikipedia/en/2/22/Kirby_Wii.png' )
+  myKirby.myInfo()
+}">
+
+
+<input type=button value="Barry" onclick="{
+  myBarry = new myStudent(13, 'Barry','https://img.memesuper.com/e2671f61e8b4445f1610bdac2c16720e_you-burn-too-much-memes-bee-movie-meme_441-334.jpeg' )
+  myBarry.myInfo()
+}">
+
+
+<input type=button value="Agumon" onclick="{
+  myAgumon = new myStudent(22, 'Austin','http://vignette1.wikia.nocookie.net/cartoonfatness/images/b/b2/Digimon_gif.gif/revision/latest?cb=20150528192921' )
+  myAgumon.myInfo()
+}">
+
+
+<input type=button value="Clockman" onclick="{
+  myClockman = new myStudent(12, 'Austin','http://vignette4.wikia.nocookie.net/yugioh/images/5/57/MonsterClock-JP-Anime-5D-NC.gif/revision/latest?cb=20150317204112' )
+  myClockman.myInfo()
+}">
+
+
+
+
+<div id="myDiv1">output here</div>
